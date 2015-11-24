@@ -38,6 +38,7 @@
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
   width: 100%;
+  position: relative;
 }
 .traffic-light-vis .traffic-light-container {
   margin: 0 auto;
