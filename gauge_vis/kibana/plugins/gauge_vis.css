@@ -1,0 +1,19 @@
+.gauge.chart-wrapper .tick {
+  stroke: #dddddd;
+}
+.gauge.chart-wrapper .tick.thick {
+  stroke: #848e96;
+}
+.gauge.chart-wrapper .tick-values {
+  fill: #4c4c4c;
+}
+.gauge.chart-wrapper .gauge-name {
+  fill: #444444;
+}
+.gauge.chart-wrapper .bounding-circle {
+  fill: #656a76;
+  stroke: #444;
+}
+.gauge.chart-wrapper .inner-circle {
+  fill: #fff;
+}
