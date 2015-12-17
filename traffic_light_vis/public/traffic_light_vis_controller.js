@@ -1,13 +1,14 @@
 define(function (require) {
-
-  var module = require('modules').get('kibana/traffic_light_vis', ['kibana']);
+  // get the kibana/metric_vis module, and make sure that it requires the "kibana" module if it
+  // didn't already
+  var module = require('ui/modules').get('kibana/traffic_light_vis', ['kibana']);
 
   module.controller('TrafficLightVisController', function ($scope, Private) {
-    var tabifyAggResponse = Private(require('components/agg_response/tabify/tabify'));
+    var tabifyAggResponse = Private(require('ui/agg_response/tabify/tabify'));
 
     var metrics = $scope.metrics = [];
 
-    $scope.processTableGroups = function (tableGroups) {
+    $scope.processTableGroups = function(tableGroups) {
       tableGroups.tables.forEach(function (table) {
         table.columns.forEach(function (column, i) {
           metrics.push({
